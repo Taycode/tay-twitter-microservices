@@ -1,0 +1,167 @@
+.idea/
+django_api/env
+django_api/.idea/
+
+
+
+# From TopTal for Django Gitignores
+
+
+# Created by https://www.toptal.com/developers/gitignore/api/django
+# Edit at https://www.toptal.com/developers/gitignore?templates=django
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media
+
+# If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
+# in your Git repository. Update and uncomment the following line accordingly.
+# <django-project-name>/staticfiles/
+
+### Django.Python Stack ###
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+django_api/build/
+django_api/develop-eggs/
+django_api/dist/
+django_api/downloads/
+django_api/eggs/
+django_api/.eggs/
+django_api/lib/
+django_api/lib64/
+django_api/parts/
+django_api/sdist/
+django_api/var/
+django_api/wheels/
+django_api/pip-wheel-metadata/
+django_api/share/python-wheels/
+*.egg-info/
+django_api/.installed.cfg
+*.egg
+django_api/MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+django_api/pip-log.txt
+django_api/pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+django_api/htmlcov/
+django_api/.tox/
+django_api/.nox/
+django_api/.coverage
+django_api/.coverage.*
+django_api/.cache
+django_api/nosetests.xml
+django_api/coverage.xml
+*.cover
+*.py,cover
+django_api/.hypothesis/
+django_api/.pytest_cache/
+django_api/pytestdebug.log
+
+# Translations
+*.mo
+
+# Django stuff:
+
+# Flask stuff:
+django_api/instance/
+django_api/.webassets-cache
+
+# Scrapy stuff:
+django_api/.scrapy
+
+# Sphinx documentation
+django_api/docs/_build/
+django_api/doc/_build/
+
+# PyBuilder
+django_api/target/
+
+# Jupyter Notebook
+django_api/.ipynb_checkpoints
+
+# IPython
+django_api/profile_default/
+django_api/ipython_config.py
+
+# pyenv
+django_api/.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+django_api/__pypackages__/
+
+# Celery stuff
+django_api/celerybeat-schedule
+django_api/celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+django_api/.env
+django_api/.venv
+django_api/env/
+django_api/venv/
+django_api/ENV/
+django_api/env.bak/
+django_api/venv.bak/
+django_api/pythonenv*
+
+# Spyder project settings
+django_api/.spyderproject
+django_api/.spyproject
+
+# Rope project settings
+django_api/.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+django_api/.mypy_cache/
+django_api/.dmypy.json
+django_api/dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+django_api/.pytype/
+
+# profiling data
+django_api/.prof
+
+# Pyc files
+*.pyc
+
+# End of https://www.toptal.com/developers/gitignore/api/django
+
+#########################################################################
+
