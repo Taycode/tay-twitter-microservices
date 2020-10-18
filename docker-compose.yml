@@ -1,6 +1,14 @@
 version: "3"
 
 services:
+  tweet_app:
+    build: ./tweet-app/
+    command: bash -c "yarn start"
+    volumes:
+      - ./tweet-app:/tweet-app
+    ports:
+      - "3000:3000"
+    hostname: tweet_app
   db:
     image: postgres
     environment:

@@ -5,15 +5,17 @@
   "private": true,
   "main": "app.js",
   "scripts": {
-    "start": "node ./bin/start",
+    "start": "nodemon ./bin/start",
     "test": "mocha --recursive"
   },
   "dependencies": {
     "cookie-parser": "^1.4.4",
     "debug": "^4.1.1",
     "express": "^4.17.1",
+    "firebase-admin": "^9.2.0",
     "http-errors": "^1.7.3",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.5"
   },
   "devDependencies": {
     "chai": "^4.2.0",
