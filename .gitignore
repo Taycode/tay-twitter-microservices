@@ -170,3 +170,4 @@ django_api/.prof
 tweet-app/node_modules
 tweet-app/yarn.lock
 tweet-app/.idea
+tweet-app/keys.json
