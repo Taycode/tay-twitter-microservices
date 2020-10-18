@@ -171,3 +171,13 @@ tweet-app/node_modules
 tweet-app/yarn.lock
 tweet-app/.idea
 tweet-app/keys.json
+
+
+# React-twitter-clone
+
+react-twitter-clone/node_modules
+react-twitter-clone/dist
+react-twitter-clone/.env
+react-twitter-clone/.firebase
+react-twitter-clone/.idea/
+react-twitter-clone/yarn.lock

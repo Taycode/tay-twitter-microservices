@@ -9,6 +9,16 @@ services:
     ports:
       - "3000:3000"
     hostname: tweet_app
+
+  react_twitter_clone:
+    build: ./react-twitter-clone/
+    command: bash -c "yarn start"
+    volumes:
+      - ./react-twitter-clone:/react-twitter-clone
+    ports:
+      - "3001:3001"
+    hostname: react-twitter-clone
+    
   db:
     image: postgres
     environment:
