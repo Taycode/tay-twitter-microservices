@@ -165,3 +165,8 @@ django_api/.prof
 
 #########################################################################
 
+# NODEJS
+
+tweet-app/node_modules
+tweet-app/yarn.lock
+tweet-app/.idea
