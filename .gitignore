@@ -175,9 +175,9 @@ tweet-app/keys.json
 
 # React-twitter-clone
 
-react-twitter-clone/node_modules
-react-twitter-clone/dist
-react-twitter-clone/.env
-react-twitter-clone/.firebase
-react-twitter-clone/.idea/
-react-twitter-clone/yarn.lock
+client/node_modules
+client/dist
+client/.env
+client/.firebase
+client/.idea/
+client/yarn.lock

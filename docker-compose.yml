@@ -10,14 +10,14 @@ services:
       - "3000:3000"
     hostname: tweet_app
 
-  react_twitter_clone:
-    build: ./react-twitter-clone/
+  client:
+    build: ./client/
     command: bash -c "yarn start"
     volumes:
-      - ./react-twitter-clone:/react-twitter-clone
+      - ./client:/client
     ports:
       - "3001:3001"
-    hostname: react-twitter-clone
+    hostname: client
 
   db:
     image: postgres
