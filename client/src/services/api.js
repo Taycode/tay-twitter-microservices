@@ -13,7 +13,9 @@ export function apiCall(method, path, data) {
         return axios[method](path, data).then(res=>{
             return resolve(res.data);
         }).catch(err=>{
-            return reject(err.response.data.error)
+            console.log('I got here')
+            console.log(err.response.data)
+            return reject(err.response.data)
         })
     })
 }
