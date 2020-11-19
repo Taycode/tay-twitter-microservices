@@ -1,23 +1,15 @@
 version: "3"
 
 services:
-  tweet_app:
-    build: ./tweet-app/
-    command: bash -c "yarn start"
-    volumes:
-      - ./tweet-app:/tweet-app
-    ports:
-      - "3000:3000"
-    hostname: tweet_app
 
-  client:
-    build: ./client/
-    command: bash -c "yarn start"
-    volumes:
-      - ./client:/client
-    ports:
-      - "3001:3001"
-    hostname: client
+#  client:
+#    build: ./client/
+#    command: bash -c "yarn start"
+#    volumes:
+#      - ./client:/client
+#    ports:
+#      - "3001:3001"
+#    hostname: client
 
   db:
     image: postgres
@@ -29,11 +21,21 @@ services:
   django_api:
     build: ./django_api/
     volumes:
-    - ./django_api:/django_api
+      - ./django_api:/django_api
     ports:
-    - "8000:8000"
+      - "8000:8000"
+
+
     command: bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
     depends_on:
       - db
     environment:
       - USE_DOCKER=True
+
+  tweet_app:
+    build: ./tweet-app/
+    command: bash -c "yarn start"
+    volumes:
+      - ./tweet-app:/tweet-app
+    ports:
+      - "3000:3000"
