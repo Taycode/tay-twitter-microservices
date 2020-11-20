@@ -18,7 +18,7 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
 
-  django_api:
+  django-api:
     build: ./django_api/
     volumes:
       - ./django_api:/django_api
@@ -32,7 +32,7 @@ services:
     environment:
       - USE_DOCKER=True
 
-  tweet_app:
+  tweet-app:
     build: ./tweet-app/
     command: bash -c "yarn start"
     volumes:

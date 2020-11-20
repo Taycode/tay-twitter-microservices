@@ -14,6 +14,7 @@ class TweetsCtrl {
     await tweetsServices.postTweet(response.id, tweet);
     return res.status(201).json({
       data: {
+        user: response.id,
         tweet
       },
       message: 'Tweet Created',
