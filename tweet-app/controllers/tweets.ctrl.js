@@ -21,5 +21,25 @@ class TweetsCtrl {
       status: true
     });
   }
+
+  static async likeTweet(req, res) {
+    const { authorization } = req.headers;
+
+    const response = await userServices.identifyUser(authorization);
+
+    const {
+      tweetId
+    } = req.params;
+
+    await tweetsServices.likeTweet(response.id, tweetId);
+    return res.status(200).json({
+      data: {
+        user: response.id,
+        tweet: tweetId
+      },
+      message: 'Tweet Liked',
+      status: true
+    });
+  }
 }
 module.exports = TweetsCtrl;
